@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid home">
     <div class="row">
             <div class="col-md-1" id="sdkiri">
                 <div class="marquee">
@@ -25,43 +25,55 @@
             </div>
         
         <div class="col-md-5">
-            <div class="h1">
               <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-            </svg>
-            </a>
-            <h1 class="text-center">PERPUSTAKAAN</h1>
-           <div class="input-group">
-                <form>
-                 <input class="home" type="text" name="search" placeholder="CARI TERBITAN">
-                </form>
-            </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg>
+             </a>
+         <!--    <div class="h1">
+                <h1 class="text-center">PERPUSTAKAAN</h1>
+                <div class="input-group justify-content-center">
+                    <form>
+                     <input class="text-center home" type="text" name="search" placeholder="CARI TERBITAN">
+                    </form>
+                </div>
+            </div> -->
+            <div class="h1">
+                
+                <h1 class="text-center ip">INFO<br>PERPUSTAKAAN</h1>
+                <div class="input-group-ip">
+                    <form>
+                     <input type="text" name="search" placeholder="CARI TERBITAN">
+                    </form>
+                </div>
             </div>
             
             
             <footer>
-                <div class="row">
+                <div class="row m-0">
                     <div class="col-sm-12" id="atas">
                     <p>LIBRARIAN PICKS</p>
                     </div>
                 </div>
-            <div class="row" id="gambar">
-                <div class="col-md-3">
+            <div class="row m-0 d-flex flex-nowrap" id="gambar">
+                <div class="col-3">
                     <img src="Asset/image/gambar1.jpg" alt="gambar1">
                 </div>
-                <div class="col-md-3">
+                <div class="col-3">
                     <img src="Asset/image/gambar2.jpg" alt="gambar2">
                 </div>
-                <div class="col-md-3">
+                <div class="col-3">
                     <img src="Asset/image/gambar3.jpg" alt="gambar3">
                 </div>
-                <div class="col-md-3">
+                <div class="col-3">
+                    <img src="Asset/image/gambar4.jpg" alt="gambar4">
+                </div>
+                <div class="col-3">
                     <img src="Asset/image/gambar4.jpg" alt="gambar4">
                 </div>
             </div>
-                <div class="row">
-                    <div class="col-sm-12 text-center"><p>INDONESIAN VISUAL ART ARCHIVE (IVAA)<br>
+                <div class="row m-0">
+                    <div class="col-sm-12 text-center"><p class="py-3">INDONESIAN VISUAL ART ARCHIVE (IVAA)<br>
                     Jln. Ireda Gang Hiperkes, Dipowinatan 188 A/B
                     RT. 14, RW. 03 Keparakan, Mergangsan - Yogyakarta 55152
                     Telp./ Fax.: +62 274 375262 Email: program@ivaa-online.org</p></div>
@@ -95,27 +107,27 @@
 
        
 
-    <div class="row" id="kolomatas-h">
+    <div class="h-50 row" id="kolomatas-h">
 
-      <div class="content-video">
+      <div class="w-100 content-video">
         <span class="home" style="font-size:35px; cursor:pointer" onclick="openNav()">&#9776; </span>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HnJo_mS03Pw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HnJo_mS03Pw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
       </div>
         
     </div>
 
     <div class="row" id="kolombawah">
-        <div class="col-md-6" id="kiri">
-            <section>
-              <div class="h2">
+        <div class="text-center col-md-6" id="kiri">
+          
+              <!-- <div class="h2">
                 <a href="#"><p>INFO<br>PERPUSTAKAAN</p></a>
-              </div>
+              </div> -->
+               <a href="#"><h5>INFO<br>PERPUSTAKAAN</h5></a>
               <div class="skewedr"></div>
             
-            </section>
         </div>
-        <div class="col-md-6" id="kanan">
+        <div class="text-center col-md-6" id="kanan">
             <a href="#"><h5>REVIEW BUKU/<br>SOROTAN PUSTAKA</h5></a>
         </div>
     </div>

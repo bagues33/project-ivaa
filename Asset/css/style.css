@@ -1,15 +1,21 @@
+ html, 
+
  /*----------------------Awal Home------------------*/
 .container-fluid {
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  /*overflow: hidden;*/
 }
 
+/*.col-md-6 {
+  height: 100vh !important;
+}
+*/
 .col-md-1 {
   background-color: #b3b1b2;
   overflow: hidden;
   height: 100vh;
+  /*position: fixed;*/
 }
-
 
 .marquee {
   margin: 0;
@@ -43,6 +49,20 @@
 
 .col-md-5 {
 	background-color: #8091af;
+  height: 100vh !important;
+}
+
+.h1 {
+  text-align: center;
+  position: relative;
+}
+
+.home .h1 {
+  text-align: center;
+  position: relative;
+  top: 40% !important;
+  margin-top: -350px;
+
 }
 
 .col-md-5 svg {
@@ -52,6 +72,7 @@
 
 h1 {
 	padding-top: 130px;
+  /*margin: 0 auto;*/
 }
 
 .row h1 {
@@ -59,8 +80,9 @@ h1 {
 }
 
 .row .input-group {
-	padding-bottom: 115px;
-  padding-left: 115px;
+	padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  /*padding-left: 5% !important;*/
 }
 
 ::-webkit-input-placeholder {
@@ -89,7 +111,10 @@ input.home[type=text]:focus {
 }
 
 footer {
-	margin-top: 28px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer #atas {
@@ -105,7 +130,9 @@ footer #atas p {
 }
 
 #gambar {
-	height: 120px;
+  width: 100%;
+  overflow: auto;
+	height: 150px;
   background-color: #e7e5e6;
 }
 
@@ -170,7 +197,8 @@ footer #atas p {
 }
 
 span.home {
-	margin-left: 643px;
+  right: 1;
+  top: 1;
   position: absolute;
   color: white;
 }
@@ -207,26 +235,31 @@ span.home {
 	
 }
 
-iframe {
+/*iframe {
   width: 680px;
   height: 335px;
-}
+}*/
 
 #kolombawah {
-	height: 300px;
+  height: 50%;
+	/*height: 100% !important;*/
 	background-color: #DCDCDC;
 }
 
-section .h2 {
-  position: absolute;
+.h2 {
+  /*position: absolute;*/
+  position: relative;
   z-index: 10;
   font-size: 20px;
   text-align: center;
+  /*top: 40%;*/
+  /*margin-top: -100px !important;*/
 }
 
 .h2 p {
-  padding-top: 120px;
-  padding-left: 70px;
+  /*padding-top: 120px;*/
+  /*padding-left: 70px;*/
+  /*padding: 0 !important;*/
 
 }
 
@@ -261,6 +294,26 @@ section .h2 {
   color: #273746;
 }
 
+#kiri {
+  height: 100% !important;
+}
+
+#kiri h5 {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  padding-top: 125px;
+}
+
+#kiri a {
+  text-decoration: none;
+  color: black;
+}
+
+#kiri a:hover {
+  color: #273746;
+}
+
 .skewedr {
   position: absolute;
   top: 0;
@@ -271,7 +324,7 @@ section .h2 {
   height: 100%;
   background: #8091af;
   z-index: 0;
-  transform: skewY(42deg);
+  transform: skewY(130deg);
   transform-origin: top right;
 
 }
@@ -326,15 +379,14 @@ span.area-a {
 /*awal form login*/
 .box.area-a {
     width: 300px;
-    padding-top: 20px;
-    padding-left: 5px;
     position: absolute;
     top: 50%;
+    margin-top: -100px;
     left: 50%;
+    margin-left: -100px;
     background: transparent;
     text-align: center;
     transition: 0.25s;
-    margin-top: 0px;
 
 }
 
@@ -393,9 +445,10 @@ span.area-a {
 
 /* --------------- Awal data_kawan_ivaa ------------ */
 .col-md-5 .row-1 h4 {
-    margin-left: 145px;
-    margin-top: -10px;
+ /*   margin-left: 145px;
+    margin-top: -10px;*/
 }
+
 
 .col-md-5 .row-1 a {
   color: black;
@@ -407,9 +460,9 @@ span.area-a {
 
 .col-md-5 .row-2 {
   background-color: #242424;
-  margin-left:-15px;
-  margin-top: 30px;
-  width: 565px;
+  /*margin-left:-15px;*/
+  /*margin-top: 30px;*/
+  /*width: 565px;*/
 }
 
 .col-md-5 .row-2 p {
@@ -420,61 +473,67 @@ span.area-a {
 }
 
 .col-md-5 .row-3 {
-  width: 565px;
-  height: 320px;
-  margin-left: -15px;
-  margin-top: -15px;
+  /*width: 565px;*/
+  /*height: 320px;*/
+  /*margin-left: -15px;*/
+  /*margin-top: -15px;*/
   background-color: #fbfbfb;
   font-size: 10px;
   text-align: center;
 }
 
 .col-md-5 .row-3 p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
+    /*padding-top: 10px;*/
+/*    padding-bottom: 10px;
+    padding-right: 30px;*/
 }
 
 .row-3 .vertikal {
+  position: absolute;
+  right: 0;
+  top: 40%;
   transform: rotate(360deg);
   writing-mode: vertical-rl;
-  margin-left: 510px;
-  overflow: hidden;
-  margin-top: -220px;
+  /*margin-left: 510px;*/
+  /*overflow: hidden;*/
+  /*margin-top: -220px;*/
   font-size: 14px;
 }
 
 .row-4 {
   background-color: #cdcbcc;
-  margin-left: -15px;
-  width: 565px;
-  height: 164px;
+  /*margin-left: -15px;*/
+  /*width: 565px;*/
+  /*height: 164px;*/
 }
 
 .row-4 .vertikalb {
   transform: rotate(360deg);
   writing-mode: vertical-rl;
-  margin-left: 510px;
-  overflow: hidden;
-  margin-top: 23px;
+  /*margin-left: 510px;*/
+  /*overflow: hidden;*/
+  /*margin-top: 23px;*/
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 14px;
 }
 
 /*awal form login*/
 .box {
     width: 300px;
-    padding-top: 130px;
-    padding-left: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    /*padding-top: 130px;*/
+    /*padding-left: 0px;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
     background: transparent;
     text-align: center;
     transition: 0.25s;
-    margin-top: -125px;
-    margin-left: -165px;
-    margin-bottom: -125px;
-    margin-right: -125px;
+    /*margin-top: -125px;*/
+    /*margin-left: -165px;*/
+    /*margin-bottom: -125px;*/
+    /*margin-right: -125px;*/
 
 }
 
@@ -534,9 +593,6 @@ span.area-a {
 
 }
 
-span {
-	float: right;
-}
 
 #inline a {
 	display: inline;
@@ -557,57 +613,53 @@ span {
 #atas-dki #kiri hr {
   border-width: 1px;
   border-color: black;
-  width: 500px;
-  margin-left: -15px;
-  margin-top: 0px;
+  width: 100%;
 }
 
 #atas-dki #kiri p {
   text-align: center;
-  padding-top: 5px;
 }
 
  .kotak .kecil {
   font-size: 10px;
-  margin-top: -10px;
 
+}
+
+.kotak span {
+  right: 0;
+  position: absolute;
 }
 
  .kotak .besar {
   font-size: 16px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 
 }
 
  .kotak .kiri {
   font-size: 10px;
-  margin-left: -200px;
-  margin-bottom: -35px;
 }
 
 
  .kotak .kanan {
   font-size: 10px;
-  margin-left: 170px;
   
 }
 
 #atas-dki #kanan {
   background-color: #b4b4b4;
   width: 300px;
-  height: 265px;
+  /*height: 265px;*/
 }
 
 #atas-dki #kanan p {
   text-align: center;
-  margin-top: 5px;
 }
 
 #atas-dki #kanan hr {
   border-width: 1px;
   border-color: black;
-  width: 330px;
-  margin-left: -15px;
+  width: 100%;
 }
 /* akhir atas */
 
@@ -621,21 +673,19 @@ span {
 #tengah #kiri hr {
   border-width: 1px;
   border-color: black;
-  width: 400px;
-  margin-left: -15px;
+  width: 100%;
 }
 
 #tengah #kanan {
   background-color: #b4b4b4;
   width: 300px;
-  height: 265px;
+  /*height: 265px;*/
 }
 
 #tengah #kanan hr {
   border-width: 1px;
   border-color: black;
-  width: 330px;
-  margin-left: -15px;
+  width:100%;
 }
 
 #tengah .kotak {
@@ -646,33 +696,30 @@ span {
 /* awal bawah */
 #bawah #kirid {
   background-color: #e7e5e6;
-  width: 300px;
-  height: 105px;
+  /*width: 300px;*/
+  /*height: 105px;*/
 }
 
 #bawah #kirid hr {
   border-width: 1px;
   border-color: black;
-  width: 330px;
-  margin-left: -15px;
+  width: 100%;
 }
 
 #bawah #kanand {
   background-color: #b4b4b4;
-  width: 300px;
-  height: 105px;
+/*  width: 300px;
+  height: 105px;*/
 }
 
 #bawah #kanand hr {
   border-width: 1px;
   border-color: black;
-  width: 330px;
-  margin-left: -15px;
+  width: 100%;
 }
 
 #bawah .kotak {
   text-align: center;
-  margin-top: 20px;
 }
 /* akhir bawah */
 /* ------------------ Akhir data_kawan_ivaa ---------- */
@@ -700,10 +747,10 @@ h1.ip {
 	height: 170px;
 }
 
-.row .input-group-ip {
+/*.row .input-group-ip {
 	padding-bottom: 115px;
   padding-left: 115px;
-}
+}*/
 
 input[type=text] {
   width: 290px;
@@ -818,8 +865,11 @@ input[type=text]:focus {
 }
 
 span.ip {
-	float: right;
-  margin-left: 630px;
+  z-index: 10;
+  position: absolute;
+  right: 0.5em;
+	/*float: right;*/
+  /*margin-left: 630px;*/
 }
 
 #inline a {
@@ -840,16 +890,16 @@ span.ip {
 }
 
 #kolomatas-ip {
-	height: 335px;
+	height: 50%;
   background-image: url("../image/gambar.PNG");
   background-repeat: no-repeat;
-  background-size: 680px;
+  background-size: cover;
   margin-left: -15px;
   
 }
 
 #kolombawah {
-	height: 300px;
+	/*height: 300px;*/
 	background-color: #DCDCDC;
 }
 
@@ -858,26 +908,29 @@ span.ip {
 	overflow: hidden;
 }
 
-.h2 {
+/*.h2 {
   position: absolute;
   z-index: 10;
   font-size: 23px;
   text-align: center;
-}
+  margin: 0 auto !important;
+}*/
 
-.h2 p {
+/*.h2 p {
   padding-top: 119px;
   padding-left: 65px;
+  text-align: center;
 }
 
 .h2 a {
+  text-align: center;
   text-decoration: none;
   color: black;
 }
 
 .h2 a:hover {
   color: #273746;
-}
+}*/
 
 #kanan h4 {
 	text-align: center;
@@ -917,6 +970,12 @@ span.ip {
   background-color: #F6F6F6;
 }
 
+#ataskanan span {
+  position: absolute;
+  right: 0.5em;
+  z-index: 10;
+}
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -924,10 +983,6 @@ span.ip {
   font-size: 36px;
   margin-left: 50px;
 
-}
-
-span {
-	float: right;
 }
 
 #inline a {
@@ -1013,7 +1068,6 @@ h1.p {
 
 .row .input-group-p {
 	padding-bottom: 115px;
-  padding-left: 115px;
 }
 
 ::-webkit-input-placeholder {
@@ -1021,8 +1075,9 @@ h1.p {
   }
 
 .col-md-6.p {
+  height: 100vh;
+  overflow: auto;
   margin: 0;
-  height: 100%;
   background-color: #EDEDED;
 }
 
@@ -1035,9 +1090,10 @@ h1.p {
 
 }
 
-span.perpus {
-	float: right;
-  padding-left: 180px;
+.perpus {
+  position: absolute;
+  right: 0.5em;
+  top: 0;
 }
 
 table {
@@ -1067,7 +1123,7 @@ tr .header p {
 
 tr p {
   font-size: 10px;
-  margin-top: -22px;
+  margin-top: -20px;
 }
 
 tr .bawah p {
@@ -1170,12 +1226,12 @@ input.perpus2[type=text]:focus {
 
 }
 
-span.p2 {
+/*span.p2 {
   z-index: 10;
   margin-left: 580px;
   margin-top: -630px;
 }
-
+*/
 
 #inline a {
 	display: inline;
@@ -1187,6 +1243,8 @@ span.p2 {
 }
 
 .col-md-1.p2 .vertikal-p2 {
+      text-align: center;
+      height: 100%;
      transform: rotate(180deg);
       writing-mode: vertical-rl;
       margin-top: 5px;
@@ -1195,6 +1253,10 @@ span.p2 {
 
 .col-md-11 {
   background-color: #b3b1b2;
+}
+
+.col-md-3, .col-md-9 {
+  z-index: 1;
 }
 
 .tulisan {
@@ -1294,7 +1356,7 @@ h1.pusta {
   background-repeat: repeat;
   background-size: 330px;
 }
-
+/*
 #gambar {
 	height: 120px;
 }
@@ -1307,7 +1369,7 @@ h1.pusta {
 	height: 115px;
 	width: 100px;
 	padding: 5px 5px 5px 5px;
-}
+}*/
 
 span.pusta {
 	float: right;
@@ -1325,8 +1387,8 @@ span.pusta {
 
 #ataskanan-p {
   background-color: rgba(128,145,175, 0.9);
-  width: 315px;
-  height: 335px;
+  /*width: 315px;*/
+  /*height: 335px;*/
   
 }
 
@@ -1336,7 +1398,7 @@ span.pusta {
 }
 
 #kolombawah {
-	height: 300px;
+	/*height: 300px;*/
 	background-color: #DCDCDC;
 }
 
@@ -1381,8 +1443,8 @@ h1.pusta2 {
 #ataskiri {
   background-image: url('../image/edy.png');
   background-repeat: no-repeat;
-  background-size: 340px;
-  height: 325px;
+  background-size: cover;
+  /*height: 325px;*/
 }
 
 .sidenav .closebtn {
@@ -1392,10 +1454,6 @@ h1.pusta2 {
   font-size: 36px;
   margin-left: 50px;
   
-}
-
-span {
-	float: right;
 }
 
 #inline a {
@@ -1422,9 +1480,9 @@ span {
 
 
 
-.row .judul {
+/*.row .judul {
     padding-left: 100px;
-}
+}*/
 
 .row#bawah-pusta2 .curved {
       padding-top: 10px;
